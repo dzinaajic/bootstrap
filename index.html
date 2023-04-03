@@ -13,53 +13,60 @@
 <body>
 
     <!-- Navigation bar -->
-    <nav>
-        <a href="#">My Portfolio</a>
-        <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">My Portfolio</a>
+        <button 
+        
+        class="navbar-toggler"
+        type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
+            <span class="navbar-toggler-icon">
+            </span>
         </button>
-        <div>
+        <div class="collapse navbar-collapse"
+            id="navbarNav">
             <ul>
-                <li>
-                    <a href="#">Home</a>
+                <li class="nav-item">
+                    <a class="navbar-link" href="#">Home</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
+                <li class="nav-item">
+                    <a class="navbar-link" href="#">About</a>
                 </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li  class="nav-item">
+                    <a class="navbar-link" href="#">Portfolio</a>
+            </li>
+                <li class="nav-item">
+                    <a class="navbar-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Jumbotron -->
-    <div>
-        <h1>Hello, world!</h1>
+    <div class="jumbotron">
+        <h1 class="display-4"> Hello, world!</h1>
         <p>This is my portfolio website.</p>
         <hr>
         <p>It is still a work in progress, but feel free to look around!</p>
-        <a href="#" role="button">Learn more</a>
+        <a class="btn-primary btn-lg"
+        href="#" role="button">Learn more</a>
+
     </div>
 
     <!-- About section -->
-    <div>
-        <div>
-            <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
                 <h2>About Me</h2>
                 <p>My name is John Doe and I am a web developer based in New York City. I have experience in HTML, CSS,
                     JavaScript, and other web technologies.</p>
                 <p>When I'm not coding, I enjoy hiking and playing guitar.</p>
             </div>
-            <div>
+            <div class="col-md-6">
                 <img src="https://via.placeholder.com/400x400" alt="Profile Picture">
-            </div>
+            </div class="container">
         </div>
-    </div>
+    </div> class="card"
 
     <!-- carousel -->
 
@@ -89,11 +96,11 @@
     </div>
     -->
     <!-- Portfolio section -->
-    <div>
+    <div class="container">
         <h2>My Portfolio</h2>
-        <div>
-            <div>
-                <div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
                     <img src="https://via.placeholder.com/400x250" alt="...">
                     <div>
                         <h5>Project 1</h5>
@@ -102,8 +109,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="col-md-4"> 
+                <div class="card">
                     <img src="https://via.placeholder.com/400x250" alt="...">
                     <div>
                         <h5>Project 2</h5>
@@ -112,8 +119,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="col-md-4">
+                <div class="card">
                     <img src="https://via.placeholder.com/400x250" alt="...">
                     <div>
                         <h5>Project 3</h5>
